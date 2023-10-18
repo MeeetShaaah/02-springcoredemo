@@ -1,2 +1,5 @@
-package springcoredemo.springcoredemo.src.main.java.com.luv2code.springcoredemo;public interface coach {
+package com.luv2code.springcoredemo;
+
+public interface Coach {
+    String getDailyWorkout();
 }
