@@ -14,11 +14,9 @@ public class DemoController {
     private Coach anotherCoach;
     // define Constructor for dependency injection 
     @Autowired
-    public DemoController(@Qualifier("cricketCoach") Coach theCoach, 
-                          @Qualifier("cricketCoach") Coach theanotherCoach) {
+    public DemoController(@Qualifier("swimCoach") Coach theCoach) {
         System.out.println("In Constructor:" + getClass().getSimpleName());
         myCoach = theCoach;
-        anotherCoach = theanotherCoach;
  }
 
 //    // define setter method for dependency injection
